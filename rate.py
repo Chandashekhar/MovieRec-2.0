@@ -3,9 +3,13 @@ import csv
 import time
 import tkMessageBox
 
-'''rating module'''
+'''rating'''
 
 def rate():
+    '''
+    gui that enables user to rate movies
+
+    '''
 
     top = Tk()
 
@@ -24,6 +28,11 @@ def rate():
     m.place(x = "80", y = "80")
 
     def select():
+        '''
+        reads movie-name, rating.
+
+        writes user-id, movie-id, rating and timestamp into rate.csv
+        '''
 
         flag = 0
         movie = m.get()
@@ -79,6 +88,7 @@ def rate():
 
     label = Label(top)
     label.pack()
+    
     top.mainloop()
 
 

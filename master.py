@@ -4,13 +4,18 @@ from Tkinter import *
 import tkMessageBox
 import csv
 
-'''login module'''
+'''login'''
 
 top = Tk()
 
 top.geometry("250x250")
 
 def validate():
+	'''
+	searches for the username and if found, validates username passcode.
+
+	updates currentUserID.txt with current userID. 
+	'''
 	currentUsername = loginUsername.get()
 	currentPasscode = loginPasscode.get()
 	with open('registration.csv' , 'rb') as csvfile:
