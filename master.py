@@ -1,5 +1,6 @@
 import rate
 import register
+
 from Tkinter import *
 import tkMessageBox
 import csv
@@ -9,6 +10,7 @@ import csv
 top = Tk()
 
 top.geometry("250x250")
+top.resizable(0,0)
 
 def validate():
 	'''
