@@ -2,10 +2,18 @@ from Tkinter import *
 import tkMessageBox
 import csv
 
-'''register module'''
+'''register'''
 
 def callRegister():
+    '''
+    prompts new user to register
+
+    asks username, age, sex, occupation and passcode from user 
+    
+    '''
+
     top = Tk()
+    top.resizable(0,0)
 
     top.geometry("300x300")
 
@@ -52,6 +60,13 @@ def callRegister():
     confirmPasscode.place(x = "150", y = "220")
 
     def getData():
+        '''
+        reads username, age, sex, occupation and passcode from user 
+        reads userID from UserID.txt
+        writes userID + 1 into UserID.txt
+        writes userID, username, age, sex, occupation and passcode into registration.csv
+        
+        '''
         gUsername = username.get()
         gAge = age.get()
         gSex = sex.get()
