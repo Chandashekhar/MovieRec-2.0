@@ -19,6 +19,10 @@ def csv_to_list(csv_file, delimiter=','):
         return list(reader)
 
 
+<<<<<<< HEAD
+=======
+'''rating'''
+>>>>>>> origin/master
 
 def rate():
     '''
@@ -146,6 +150,12 @@ def rate():
 
 
 
+<<<<<<< HEAD
+=======
+    label = Label(top)
+    label.pack()
+    
+>>>>>>> origin/master
     top.mainloop()
     
 
